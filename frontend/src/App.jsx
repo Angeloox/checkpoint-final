@@ -1,12 +1,9 @@
-import Home from "./pages/Home";
-
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <h1>K-Pital Quizz P2</h1>
     </div>
   );
 }

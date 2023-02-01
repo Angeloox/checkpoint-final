@@ -1,4 +1,4 @@
-const models = require("../models");
+const models = require("../models/_unused");
 
 const browse = (req, res) => {
   models.item
