@@ -1,14 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dokdo&display=swap");
 body {
   background-color: RGB(197, 220, 103);
-  /* font-family: "M PLUS Rounded 1c", sans-serif; */
-  /* font-family: 'Press Start 2P', cursive; */
-  /* font-family: 'Silkscreen', cursive; */
-  font-family: 'Dokdo', cursive;
-  font-size: 1.5rem;
+  font-family: "Dokdo", cursive;
+  font-size: 135%;
 }
 
 .App {
@@ -16,10 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .App > h1 {
-  border: 1px solid black;
+  border: 3px solid black;
   width: 25%;
   background-color: RGB(231, 158, 92);
 }
