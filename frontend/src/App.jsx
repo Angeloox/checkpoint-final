@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+
+import Landing from "./pages/Landing";
 import Quiz from "./pages/Quiz";
 
 function App() {
-  const [score, setScore] = useState(0);
   return (
     <div className="App">
-      <h1>European K-Pitals</h1>
-      <h2>Current Score: {score}</h2>
-      <Quiz setScore={setScore} score={score} />
+      <h1>European K-Pitals Quizzzz</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/Quiz" element={<Quiz />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

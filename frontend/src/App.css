@@ -15,6 +15,7 @@ body {
 
 .App > h1 {
   border: 3px solid black;
-  width: 25%;
+  width: 50%;
+  padding: 0.5em;
   background-color: RGB(231, 158, 92);
 }

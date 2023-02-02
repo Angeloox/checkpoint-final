@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import useFetch from "../services/useFetch";
 import Question from "../components/Question";
 import Response from "../components/Responses";
 import utils from "../services/utils";
 import "./Quiz.css";
 
-function Quiz({ setScore, score }) {
+function Quiz() {
   const [currentCapital, setCurrentCapital] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [message, setMessage] = useState("");
   const [answers, setAnswers] = useState([]);
+  const [score, setScore] = useState(0);
 
   const { data: capitals } = useFetch({
     path: "/capitals",
@@ -61,6 +61,7 @@ function Quiz({ setScore, score }) {
           handleEvent(userResponse);
         }}
       />
+      <h2>Current Score: {score}</h2>
       <p>{message && message}</p>
     </div>
   );

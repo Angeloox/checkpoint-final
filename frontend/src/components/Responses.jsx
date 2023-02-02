@@ -6,9 +6,9 @@ function Response({ answers, onClick }) {
         {answers &&
           answers.map((el) => {
             return (
-              <li key={el?.id}>
-                <button type="button" onClick={() => onClick(el?.capital)}>
-                  {el?.capital}
+              <li>
+                <button type="button" onClick={() => onClick(el && el.capital)}>
+                  {el && el.capital}
                 </button>
               </li>
             );

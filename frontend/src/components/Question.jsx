@@ -4,7 +4,7 @@ import React from "react";
 function Question({ currentCapital }) {
   return (
     <div>
-      <h2>What is the capital of {currentCapital?.country} ?</h2>
+      <h2>What is the K-pital of {currentCapital?.country} ?</h2>
     </div>
   );
 }
