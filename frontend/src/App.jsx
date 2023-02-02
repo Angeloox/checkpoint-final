@@ -7,7 +7,7 @@ import Quiz from "./pages/Quiz";
 function App() {
   return (
     <div className="App">
-      <h1>European K-Pitals Quizzzz</h1>
+      <h1>Ultimate WORLD K-pitals Quizzzz</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />

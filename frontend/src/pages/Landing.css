@@ -11,16 +11,17 @@
   width: auto;
   padding: 0.5em;
   background-color: RGB(231, 158, 92);
+  font-size: 3em;
 }
 
 button {
   background-color: RGB(203, 120, 133);
-  padding: 1em;
+  padding: 0.5em;
   margin-top: 25%;
   border: 3px solid black;
   border-radius: 20px;
   width: 80%;
   height: 80%;
   font-family: "Dokdo", cursive;
-  font-size: 1.5em;
+  font-size: 2em;
 }

@@ -7,8 +7,20 @@
   height: auto;
 }
 
+.quiz__score {
+  border: 5px solid black;
+  border-radius: 16px;
+  background-color: RGB(197, 220, 103);
+  width: 50%;
+  display: inline-block
+}
+
+.quiz__question__number{ 
+  text-decoration: 0.1em underline;
+}
+
 .quiz__card > p {
-  font-size: 1.5em;
+  font-size: 3em;
   color: red;
 }
 
@@ -25,7 +37,7 @@ li > button {
   border: 3px solid black;
   border-radius: 20px;
   margin: 16px;
-  width: 50%;
+  width: 90%;
   height: 80%;
   font-family: "Dokdo", cursive;
   font-size: 1.5em;

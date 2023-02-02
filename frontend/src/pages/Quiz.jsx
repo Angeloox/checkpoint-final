@@ -51,8 +51,8 @@ function Quiz() {
 
   return (
     <div className="quiz__card">
-      <h2 className="question__number">
-        Question {currentQuestion + 1} out of 10
+      <h2 className="quiz__question__number">
+        Question {currentQuestion + 1} out of {capitals.length}
       </h2>
       <Question currentCapital={currentCapital} />
       <Response
@@ -61,7 +61,7 @@ function Quiz() {
           handleEvent(userResponse);
         }}
       />
-      <h2>Current Score: {score}</h2>
+      <h2 className="quiz__score">Current Score: {score}</h2>
       <p>{message && message}</p>
     </div>
   );
