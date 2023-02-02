@@ -1,0 +1,17 @@
+.quiz__container {
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz__country {
+  border: 1px solid black;
+  background-color: RGB(231, 158, 92);
+  margin: 5em;
+  padding: 2em;
+}
+
+.bold {
+  font-weight: bold;
+}

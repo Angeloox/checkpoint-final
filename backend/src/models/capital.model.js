@@ -6,6 +6,6 @@ async function getAllCapitals() {
   return rows;
 }
 
-module.export = {
+module.exports = {
   getAllCapitals,
 };
