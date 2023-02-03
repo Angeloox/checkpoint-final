@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const URL = import.meta.env.VITE_BACKEND_URL;
 
 function useFetch({ path, method }) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);

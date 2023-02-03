@@ -13,9 +13,14 @@ body {
   justify-content: center;
 }
 
-.App > h1 {
+.quiz__title {
   border: 3px solid black;
-  width: 50%;
   padding: 0.5em;
   background-color: RGB(231, 158, 92);
+  color: black;
+  font-size: 3rem;
+}
+
+a:link {
+  text-decoration: none;
 }

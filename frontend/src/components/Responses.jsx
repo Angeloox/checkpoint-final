@@ -1,18 +1,29 @@
 /* eslint-disable react/prop-types */
-function Response({ answers, onClick }) {
+
+import "./Responses.css";
+
+function Response({ answers, onClick, color }) {
   return (
     <div>
       <ul>
         {answers &&
-          answers.map((el) => {
-            return (
-              <li>
-                <button type="button" onClick={() => onClick(el && el.capital)}>
-                  {el && el.capital}
-                </button>
-              </li>
-            );
-          })}
+          answers
+            .filter((el) => el)
+            .map((el) => {
+              return (
+                <div key={el.id}>
+                  <li>
+                    <button
+                      className={color}
+                      type="button"
+                      onClick={() => onClick(el.capital)}
+                    >
+                      {el.capital}
+                    </button>
+                  </li>
+                </div>
+              );
+            })}
       </ul>
     </div>
   );

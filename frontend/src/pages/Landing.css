@@ -6,14 +6,6 @@
   justify-content: center;
 }
 
-.App > h1 {
-  border: 3px solid black;
-  width: auto;
-  padding: 0.5em;
-  background-color: RGB(231, 158, 92);
-  font-size: 3em;
-}
-
 button {
   background-color: RGB(203, 120, 133);
   padding: 0.5em;

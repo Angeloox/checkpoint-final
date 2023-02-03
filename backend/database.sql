@@ -1,6 +1,10 @@
+DROP DATABASE IF EXISTS capitals;
+
 CREATE DATABASE capitals;
 
 USE capitals;
+
+DROP TABLE IF EXISTS capitals;
 
 CREATE TABLE capitals (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,7 +19,7 @@ VALUES
    ('Algeria', 	'Algiers'),
    ('Andorra', 	'Andorra la Vella'),
    ('Angola', 	'Luanda'),
-   ('Antigua and Barbuda', 	'Saint John’s'),
+   ('Antigua and Barbuda', 	'Saint John''s'),
    ('Argentina', 	'Buenos Aires'),
    ('Armenia', 	'Yerevan'),
    ('Australia',	'Canberra'),
@@ -43,7 +47,7 @@ VALUES
    ('Canada', 'Ottawa'),
    ('Cape Verde', 'Praia'),
    ('Central African Republic', 'Bangui'),
-   ('Chad', 'N’Djamena'),
+   ('Chad', 'N''Djamena'),
    ('Chile', 'Santiago'),
    ('China', 'Beijing'),
    ('Colombia', 'Bogota'),
@@ -51,7 +55,7 @@ VALUES
    ('Republic of the Congo', 'Brazzaville'),
    ('Congo, Democratic Republic of', 'Kinshasa'),
    ('Costa Rica', 'San Jose'),
-   ('Cote d’Ivoire', 'Yamoussoukro'),
+   ('Cote d''Ivoire', 'Yamoussoukro'),
    ('Croatia', 'Zagreb'),
    ('Cuba', 'Havana'),
    ('Cyprus', 'Nicosia'),
@@ -77,7 +81,7 @@ VALUES
    ('Germany', 'Berlin'),
    ('Ghana', 'Accra'),
    ('Greece', 'Athens'),
-   ('Grenada', 'Saint George’s'),
+   ('Grenada', 'Saint George''s'),
    ('Guatemala', 'Guatemala City'),
    ('Guinea', 'Conakry'),
    ('Guinea-Bissau', 'Bissau'),
@@ -187,7 +191,7 @@ VALUES
    ('Tanzania', 'Dar es Salaam'),
    ('Thailand', 'Bangkok'),
    ('Togo', 'Lome'),
-   ('Tonga', 'Nuku’alofa'),
+   ('Tonga', 'Nuku''alofa'),
    ('Trinidad and Tobago', 'Port-of-Spain'),
    ('Tunisia', 'Tunis'),
    ('Turkey', 'Ankara'),
@@ -206,4 +210,4 @@ VALUES
    ('Vietnam', 'Hanoi'),
    ('Yemen', 'Sanaa'),
    ('Zambia', 'Lusaka'),
-   ('Zimbabwe', 'Harare')
+   ('Zimbabwe', 'Harare');
